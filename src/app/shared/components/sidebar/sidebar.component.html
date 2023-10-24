@@ -1,0 +1,10 @@
+<div class="bg-black border-right p-3" id="sidebar">
+    <h3 class="text-ligth">GifsApp</h3>
+    <hr>
+
+    <div class="list-group list-reset">
+        <button class="list-group-item list-group-item-action" *ngFor="let tag of listTags" (click)="tagReoad(tag)">
+            {{tag | titlecase}}
+        </button>
+    </div>
+</div>
